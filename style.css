@@ -162,25 +162,29 @@ h2 { font-size: 2rem; color: #5a36c8; margin-bottom: 20px; }
   margin-bottom: 10px;
 }
 
-/* Contato */
-.contato-info {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
-}
-.contato-info a {
-  text-decoration: none;
-  color: #5a36c8;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-.contato-info a:hover { color: #311b92; }
-
 /* Rodapé */
 footer {
   background-color: #6c4ccf;
   color: white;
   padding: 15px;
   margin-top: 40px;
+}
+
+.contato-info {
+  display: flex;           /* ativa o flexbox */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 20px;               /* espaço entre as imagens */
+  align-items: center;     /* alinha verticalmente no centro */
+  margin-top: 20px;        /* espaço acima se quiser */
+}
+
+.contato-info img {
+  width: 50px;  /* tamanho das imagens */
+  height: 50px;
+  object-fit: contain; /* mantém proporção da imagem */
+  transition: transform 0.3s;
+}
+
+.contato-info img:hover {
+  transform: scale(1.1); /* efeito ao passar o mouse */
 }
